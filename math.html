@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math — Learn &amp; Play</title>
+  <meta name="description" content="Kid-friendly math lessons and a quiz: addition, multiplication, shapes, and halves.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="math">
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="logo-badge">🌟</span>Learn &amp; Play</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="math.html" aria-current="page">Math</a>
+      <a href="english.html">English</a>
+      <a href="science.html">Science</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="subject-hero">
+      <div class="big-icon" aria-hidden="true">➗</div>
+      <div>
+        <h1>Math</h1>
+        <p>Numbers are everywhere! Learn to add, multiply, and spot shapes — then test yourself with a quiz.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="lessons-title">
+      <h2 class="section-title" id="lessons-title">Quick lessons</h2>
+      <div class="lesson-grid">
+        <article class="lesson">
+          <h3><span class="emoji">➕</span>Adding and Taking Away</h3>
+          <p>Start with the bigger number and count on. For subtraction, count backwards instead.</p>
+          <div class="example">8 + 5 → start at 8, count on: 9, 10, 11, 12, 13</div>
+        </article>
+        <article class="lesson">
+          <h3><span class="emoji">✖️</span>Multiply Means Groups</h3>
+          <p>Multiplying is a fast way to add equal groups. Three groups of four is easier as one times sum.</p>
+          <div class="example">4 + 4 + 4 = 12, so 4 × 3 = 12</div>
+        </article>
+        <article class="lesson">
+          <h3><span class="emoji">🔷</span>Shapes and Halves</h3>
+          <p>A triangle has 3 sides, a square has 4, and a circle has none. A half is 2 equal parts.</p>
+          <div class="example">Half of 10 → 10 splits into 5 and 5</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quiz-section" aria-labelledby="quiz-title">
+      <h2 class="section-title" id="quiz-title">Quiz time!</h2>
+      <div id="quiz" class="quiz-card"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Made for young learners · Learn &amp; Play © 2026
+  </footer>
+
+  <script>
+    window.QUIZ = {
+      subject: "math",
+      questions: [
+        { q: "What is 7 + 5?", options: ["10", "11", "12", "13"], answer: 2,
+          why: "7 + 5 = 12. Count on from 7: 8, 9, 10, 11, 12." },
+        { q: "Which shape has 3 sides?", options: ["Circle", "Triangle", "Square", "Star"], answer: 1,
+          why: "A triangle has 3 sides and 3 corners." },
+        { q: "What is 4 × 3?", options: ["7", "10", "12", "14"], answer: 2,
+          why: "4 × 3 means 3 groups of 4: 4 + 4 + 4 = 12." },
+        { q: "What number comes after 19?", options: ["18", "20", "21", "90"], answer: 1,
+          why: "20 comes right after 19." },
+        { q: "What is half of 10?", options: ["2", "4", "5", "8"], answer: 2,
+          why: "Half means 2 equal parts: 10 splits into 5 and 5." }
+      ]
+    };
+  </script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English — Learn &amp; Play</title>
+  <meta name="description" content="Kid-friendly English lessons and a quiz: nouns, verbs, spelling, plurals, and sentences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="english">
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="logo-badge">🌟</span>Learn &amp; Play</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="math.html">Math</a>
+      <a href="english.html" aria-current="page">English</a>
+      <a href="science.html">Science</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="subject-hero">
+      <div class="big-icon" aria-hidden="true">📚</div>
+      <div>
+        <h1>English</h1>
+        <p>Words are your superpower! Learn nouns, spelling, and how to build great sentences — then try the quiz.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="lessons-title">
+      <h2 class="section-title" id="lessons-title">Quick lessons</h2>
+      <div class="lesson-grid">
+        <article class="lesson">
+          <h3><span class="emoji">🏷️</span>Nouns and Verbs</h3>
+          <p>A noun names a person, place, or thing. A verb is an action word — something you can do.</p>
+          <div class="example">The dog (noun) runs (verb).</div>
+        </article>
+        <article class="lesson">
+          <h3><span class="emoji">✏️</span>Spelling and Plurals</h3>
+          <p>For most words, add -s to make it plural. After sh, ch, s, or x, add -es instead.</p>
+          <div class="example">cat → cats, box → boxes</div>
+        </article>
+        <article class="lesson">
+          <h3><span class="emoji">📖</span>Making Sentences</h3>
+          <p>Every sentence starts with a capital letter and ends with a full stop. It needs a who and a what.</p>
+          <div class="example">The sun is bright.</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quiz-section" aria-labelledby="quiz-title">
+      <h2 class="section-title" id="quiz-title">Quiz time!</h2>
+      <div id="quiz" class="quiz-card"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Made for young learners · Learn &amp; Play © 2026
+  </footer>
+
+  <script>
+    window.QUIZ = {
+      subject: "English",
+      questions: [
+        { q: "Which word is a noun?", options: ["Run", "Jump", "Dog", "Quickly"], answer: 2,
+          why: "A noun names a person, place, or thing. \"Dog\" is a thing." },
+        { q: "What is the plural of \"cat\"?", options: ["catz", "cats", "cates", "cat"], answer: 1,
+          why: "Most words add -s to make a plural: cat → cats." },
+        { q: "Which word is spelled correctly?", options: ["becuz", "becaus", "because", "becouse"], answer: 2,
+          why: "\"Because\" is spelled b-e-c-a-u-s-e." },
+        { q: "What is the opposite of \"big\"?", options: ["Tall", "Small", "Fast", "Loud"], answer: 1,
+          why: "Big and small are opposites." },
+        { q: "Choose the missing word: \"The sun ___ bright.\"", options: ["am", "is", "are", "be"], answer: 1,
+          why: "For one thing (the sun), we say \"is\": The sun is bright." }
+      ]
+    };
+  </script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

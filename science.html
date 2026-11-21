@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science — Learn &amp; Play</title>
+  <meta name="description" content="Kid-friendly science lessons and a quiz: living things, planets, and solids, liquids and gases.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="science">
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="logo-badge">🌟</span>Learn &amp; Play</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="math.html">Math</a>
+      <a href="english.html">English</a>
+      <a href="science.html" aria-current="page">Science</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="subject-hero">
+      <div class="big-icon" aria-hidden="true">🔬</div>
+      <div>
+        <h1>Science</h1>
+        <p>The world is full of wonders! Discover living things, the planets, and how matter changes — then test yourself.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="lessons-title">
+      <h2 class="section-title" id="lessons-title">Quick lessons</h2>
+      <div class="lesson-grid">
+        <article class="lesson">
+          <h3><span class="emoji">🌱</span>Living Things</h3>
+          <p>Plants and animals are alive. They need food, water, and air — and they grow.</p>
+          <div class="example">A seed + sunlight + water → a plant 🌱</div>
+        </article>
+        <article class="lesson">
+          <h3><span class="emoji">🪐</span>The Solar System</h3>
+          <p>Eight planets travel around the Sun. Mercury is closest to the Sun, and Earth is our home.</p>
+          <div class="example">Sun → Mercury → Venus → Earth → Mars → …</div>
+        </article>
+        <article class="lesson">
+          <h3><span class="emoji">🧊</span>Solids, Liquids and Gases</h3>
+          <p>A solid keeps its shape, a liquid flows, and a gas fills all the space it can.</p>
+          <div class="example">ice (solid) → water (liquid) → steam (gas)</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quiz-section" aria-labelledby="quiz-title">
+      <h2 class="section-title" id="quiz-title">Quiz time!</h2>
+      <div id="quiz" class="quiz-card"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Made for young learners · Learn &amp; Play © 2026
+  </footer>
+
+  <script>
+    window.QUIZ = {
+      subject: "science",
+      questions: [
+        { q: "What do plants need to grow?", options: ["Sunlight and water", "Only sand", "Only rocks", "Darkness"], answer: 0,
+          why: "Plants need sunlight and water to make food and grow." },
+        { q: "Which planet is closest to the Sun?", options: ["Venus", "Earth", "Mercury", "Mars"], answer: 2,
+          why: "Mercury is the closest planet to the Sun." },
+        { q: "What do we call frozen water?", options: ["Steam", "Ice", "Rain", "Air"], answer: 1,
+          why: "When water freezes, it becomes solid ice." },
+        { q: "Which of these animals lays eggs?", options: ["Dog", "Cat", "Chicken", "Cow"], answer: 2,
+          why: "Chickens lay eggs. Dogs, cats, and cows have babies." },
+        { q: "How many legs does an insect have?", options: ["Four", "Six", "Eight", "Ten"], answer: 1,
+          why: "All insects have six legs." }
+      ]
+    };
+  </script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

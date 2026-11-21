@@ -1,0 +1,6 @@
+# Unrelated local files
+emin
+samaha-telecom/
+
+# Duplicate build output of the site root
+dist/
